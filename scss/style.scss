@@ -1,9 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.mainContainer{
+    margin-left: 10px;
+    margin-right: 10px;
+    .mainContent{
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+    }
+}
+
+.sideBar{
+    width: 15em;
+}
+
 .productsContainer {
+    flex: 1;
     padding:0% 5%;
-    font-family: 'Raleway', sans-serif;
     display: grid;
     column-gap: 48px;
-    grid-template-areas: "product product product product product";
+    grid-template-areas: "product product product product";
+    grid-template-columns: 20% 20% 20% 20%;
     .product{
         display: flex;
         flex-direction: column;
