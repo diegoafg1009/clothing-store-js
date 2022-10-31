@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "Zapatillas OldSkool - Black/True White",
+        "price": 299,
+        "genre": "U",
+        "brand": "Vans",
+        "img": "zapatillas-oldSkool-black-true-white.webp",
+        "stock": 200,
+        "featured": 1
+    },
+    {
+        "id": 2,
+        "name": "Zapatillas UltraRange Rapidweld - Black/White",
+        "price": 399,
+        "genre": "U",
+        "brand": "Vans",
+        "img": "zapatillas-ultrarange-rapidweld-black-white.webp",
+        "stock": 100,
+        "featured": 0
+    },
+    {
+        "id": 3,
+        "name": "Polo Kappa Unisex Authentic Asten Blanco",
+        "price": 69,
+        "genre": "U",
+        "brand": "Kappa",
+        "img": "polo-kappa-unisex-authentic-asten-blanco.webp",
+        "stock": 80,
+        "featured": 1
+    },
+    {
+        "id": 4,
+        "name": "Polo Kappa Unisex Authentic Asten Negro",
+        "price": 69,
+        "genre": "U",
+        "brand": "Kappa",
+        "img": "polo-kappa-unisex-authentic-asten-negro.webp",
+        "stock": 90,
+        "featured": 1
+    },
+    {
+        "id": 5,
+        "name": "MOCHILA FJALLRAVEN  KANKEN MINI MINT GREEN",
+        "price": 399,
+        "genre": "U",
+        "brand": "Fjallraven Kanken",
+        "img": "mochila_fjallraven_kanken_mini_mint_green.webp",
+        "stock": 45,
+        "featured": 0
+    },
+    {
+        "id": 6,
+        "name": "MOCHILA HERSCHEL SUPPLY LITTLE AMERICA UNISEX BLACK",
+        "price": 459,
+        "genre": "U",
+        "brand": "Herschel Supply Co.",
+        "img": "mochila_herschel_supply_little_america_unisex_black.webp",
+        "stock": 37,
+        "featured": 1
+    },
+    {
+        "id": 7,
+        "name": "Polo Kappa Unisex 222 Banda Coen Slim Blanco",
+        "price": 99,
+        "genre": "U",
+        "brand": "Kappa",
+        "img": "polo_kappa_unisex_222_banda_coen_slim_blanco.webp",
+        "stock": 85,
+        "featured": 0
+    },
+    {
+        "id": 8,
+        "name": "Zapatilla Old Skool Port royale/True white",
+        "price": 329,
+        "genre": "U",
+        "brand": "Vans",
+        "img": "zapatilla_old_skool_port_royale_true_white.webp",
+        "stock": 70,
+        "featured": 0
+    },
+    {
+        "id": 9,
+        "name": "MOCHILA FJALLRAVEN  KANKEN MINI PASTEL LAVENDER",
+        "price": 399,
+        "genre": "U",
+        "brand": "Fjallraven Kanken",
+        "img": "mochila_fjallraven_kanken_mini_pastel_lavender.webp",
+        "stock": 45,
+        "featured": 1
+    },
+    {
+        "id": 10,
+        "name": "MOCHILA FJALLRAVEN KANKEN UNISEX OCHRE",
+        "price": 459,
+        "genre": "U",
+        "brand": "Fjallraven Kanken",
+        "img": "mochila_fjallraven_kanken_unisex_ochre.webp",
+        "stock": 49,
+        "featured": 0
+    }
+]
