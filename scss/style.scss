@@ -15,6 +15,19 @@
 
 .sideBar{
     width: 15em;
+    padding: 20px 0px;
+    .sideBar__navMenu{
+        ul{
+            list-style: none;
+            .sideBar__menuItem{
+                padding: 4px 16px;
+                .sideBar__menuTitle{
+                    display: flex;
+                    padding: 12px 8px;
+                }
+            }
+        }
+    }
 }
 
 .productsContainer {

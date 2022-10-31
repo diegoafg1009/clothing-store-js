@@ -27,7 +27,7 @@ class Product{
                                         <span>${this.brand}</span>
                                     </div>
                                     <div class="product__price">
-                                        <span>${this.price}</span>
+                                        <span>S/. ${this.price}</span>
                                     </div>
                                 </div> `
         divProducts.appendChild(divProduct)
