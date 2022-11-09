@@ -3,7 +3,7 @@ async function loadMaleProducts () {
     const response = await fetch('/assets/products.json')
     data = await response.json();
     await data.forEach(product => {
-        if(product["genre"]==="U" || product["genre"] === "M")
+        if(product["genre"]==="U" || product["genre"] === "F")
             products.push(new Product(product["id"], product["name"], product["price"], product["genre"], product["brand"], product["img"], product["stock"], product["featured"]))
     })
     return products

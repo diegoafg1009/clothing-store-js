@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourFit - Hombre</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabecera de pagina -->
+    <header class="header">
+        <!-- Menu de la pagina -->
+        <nav class="header__navMenu">
+            <ul>
+                <li>
+                    <div class="header__logo">
+                        <!-- Logo provisional, agregar luego una foto-->
+                        <a href="../index.html">
+                            YourFit
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="man.html">Hombre</a>
+                </li>
+                <li>
+                    <a href="woman.html">Mujer</a>
+                </li>
+                <li>
+                    <a href="kids.html">Niños</a>
+                </li>
+                <li>
+                    <a href="sale.html">Sale</a>
+                </li>
+                <li>
+                    <a href="on-trend.html">On Trend</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header__navIcons">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../assets/img/user.png" alt="user icon">
+                    </a>
+                </li>
+                <li>
+                    <img src="../assets/img/shopping-cart.png" alt="shopping cart icon">
+                </li>
+            </ul>
+        </nav>
+        <!-- Implementar luego el Menu Hamburguesa -->
+    </header>
+    <main>
+        <div class="mainContainer">
+            <div class="pageTitle">
+                <h1>Your Fit</h1>
+            </div>
+            <div class="mainContent">
+                <aside class="sideBar">
+                    <nav class="sideBar__navMenu">
+                        <ul>
+                            <li class="sideBar__menuItem">
+                                <span class="sideBar__menuTitle">Todos</span>
+                            </li>
+                            <li class="sideBar__menuItem" id="brandMenu">
+                                <span class="sideBar__menuTitle">Marca</span>
+                                <div class="sideBar__subMenu">
+                                    <ul>
+                                        <li class="sideBar__menuItem">
+                                            <span class="sideBar__menuTitle">Vans</span>
+                                        </li>
+                                        <li class="sideBar__menuItem">
+                                            <span class="sideBar__menuTitle">Kappa</span>
+                                        </li>
+                                        <li class="sideBar__menuItem">
+                                            <span class="sideBar__menuTitle">Herschel Supply Co.</span>
+                                        </li>
+                                        <li class="sideBar__menuItem">
+                                            <span class="sideBar__menuTitle">Fjallraven Kanken</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sideBar__menuItem">Tipo de Prenda</li>
+                            <li class="sideBar__menuItem">Precio</li>
+                        </ul>
+                    </nav>
+                </aside>
+                <div class="productsContainer">
+                    <!-- Contenido dinamino (man.js)-->
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../assets/js/product.js"></script>
+    <script src="../assets/js/man.js"></script>
+</body>
+
+</html>

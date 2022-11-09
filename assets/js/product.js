@@ -17,7 +17,7 @@ class Product{
         divProduct.setAttribute("id", "row"+row)
 
         divProduct.innerHTML = ` <div class="product__image">
-                                    <img src="assets/img/${this.img}" alt="${this.name}">
+                                    <img src="../assets/img/${this.img}" alt="${this.name}">
                                 </div>
                                 <div class="product__content">
                                     <div class="product__Title">
