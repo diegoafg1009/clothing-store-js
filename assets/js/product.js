@@ -1,5 +1,5 @@
 class Product{
-    constructor(id, name, price, genre, brand, img, stock, featured){
+    constructor(id, name, price, genre, brand, img, stock, featured, forKids, onSale){
         this.id = id
         this.name = name
         this.price = price
@@ -8,6 +8,8 @@ class Product{
         this.img = img
         this.stock = stock
         this.featured = featured
+        this.forKids = forKids
+        this.onSale = onSale
     }
 
     render(row){
