@@ -12,7 +12,7 @@ function showSubMenu() {
     })
 }
 
-async function loadMaleProducts() {
+async function loadKidsProducts() {
     let products = []
     const response = await fetch('/assets/products.json')
     data = await response.json();
@@ -57,7 +57,7 @@ function filterProductsBy(products, filter) {
 
 
 async function init() {
-    const products = await loadMaleProducts()
+    const products = await loadKidsProducts()
     displayProducts(products)
     noFilters(products)
     filterProductsBy(products, "brand")

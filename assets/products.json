@@ -115,7 +115,7 @@
         "brand": "Fjallraven Kanken",
         "img": "mochila_fjallraven_kanken_unisex_ochre.webp",
         "stock": 49,
-        "featured": false,
+        "featured": true,
         "forKids": false,
         "onSale": false
     },

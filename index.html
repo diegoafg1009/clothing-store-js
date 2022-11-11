@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Cabecera de pagina -->
     <header class="header">
@@ -61,7 +63,7 @@
     <main>
         <div class="mainContainer">
             <div class="mainHero">
-                <img src="assets/img/hero-index.webp" alt="hero">
+                <!-- <img src="assets/img/hero-index.webp" alt="hero"> -->
             </div>
             <section class="collection">
                 <a href="pages/man.html" class="collection__item">
@@ -73,6 +75,16 @@
                     <h1 class="collection__textContent">MUJER</h1>
                 </a>
             </section>
+            <div class="carousel">
+                <h1 class="carousel__title">On Trend</h1>
+                <div class="carousel__container">
+                    <button class="arrowBtn arrowBtn--left"><img src="assets/img/arrow.png" alt=""></button>
+                    <button class="arrowBtn arrowBtn--right"><img src="assets/img/arrow.png" alt=""></button>
+                    <div class="productsContainer" id="carousel__products">
+                        <!-- Contenido dinamico -->
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Pie de la pagina-->
@@ -81,5 +93,7 @@
             <p class="footerContainer__copyright">© 2022 YourFit | Todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="/assets/js/product.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>

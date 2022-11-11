@@ -63,6 +63,6 @@ async function init() {
     noFilters(products)
     filterProductsBy(products, "brand")
     showSubMenu()
-};
+}
 
 window.addEventListener('DOMContentLoaded', init);
