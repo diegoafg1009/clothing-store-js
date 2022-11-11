@@ -7,6 +7,7 @@
         "brand": "Vans",
         "img": "zapatillas-oldSkool-black-true-white.webp",
         "stock": 200,
+        "type": "Zapatillas",
         "featured": true,
         "forKids": false,
         "onSale": false
@@ -19,6 +20,7 @@
         "brand": "Vans",
         "img": "zapatillas-ultrarange-rapidweld-black-white.webp",
         "stock": 100,
+        "type": "Zapatillas",
         "featured": false,
         "forKids": false,
         "onSale": false
@@ -31,6 +33,7 @@
         "brand": "Kappa",
         "img": "polo-kappa-unisex-authentic-asten-blanco.webp",
         "stock": 80,
+        "type": "Polo",
         "featured": true,
         "forKids": false,
         "onSale": false
@@ -43,6 +46,7 @@
         "brand": "Kappa",
         "img": "polo-kappa-unisex-authentic-asten-negro.webp",
         "stock": 90,
+        "type": "Polo",
         "featured": true,
         "forKids": false,
         "onSale": false
@@ -55,6 +59,7 @@
         "brand": "Fjallraven Kanken",
         "img": "mochila_fjallraven_kanken_mini_mint_green.webp",
         "stock": 45,
+        "type": "Mochila",
         "featured": false,
         "forKids": false,
         "onSale": false
@@ -67,6 +72,7 @@
         "brand": "Herschel Supply Co.",
         "img": "mochila_herschel_supply_little_america_unisex_black.webp",
         "stock": 37,
+        "type": "Mochila",
         "featured": true,
         "forKids": false,
         "onSale": false
@@ -79,6 +85,7 @@
         "brand": "Kappa",
         "img": "polo_kappa_unisex_222_banda_coen_slim_blanco.webp",
         "stock": 85,
+        "type": "Polo",
         "featured": false,
         "forKids": false,
         "onSale": false
@@ -91,6 +98,7 @@
         "brand": "Vans",
         "img": "zapatilla_old_skool_port_royale_true_white.webp",
         "stock": 70,
+        "type": "Zapatillas",
         "featured": false,
         "forKids": false,
         "onSale": false
@@ -103,6 +111,7 @@
         "brand": "Fjallraven Kanken",
         "img": "mochila_fjallraven_kanken_mini_pastel_lavender.webp",
         "stock": 45,
+        "type": "Mochila",
         "featured": true,
         "forKids": false,
         "onSale": false
@@ -115,6 +124,7 @@
         "brand": "Fjallraven Kanken",
         "img": "mochila_fjallraven_kanken_unisex_ochre.webp",
         "stock": 49,
+        "type": "Mochila",
         "featured": true,
         "forKids": false,
         "onSale": false
@@ -127,6 +137,7 @@
         "brand": "Vans",
         "img": "zapatillas_vans_old_skool_v_ninos_navy_true_white.webp",
         "stock": 80,
+        "type": "Zapatillas",
         "featured": false,
         "forKids": true,
         "onSale": false
@@ -139,6 +150,7 @@
         "brand": "Vans",
         "img": "zapatillas_vans_old_skool_v_ninos_butterfly_dream.webp",
         "stock": 70,
+        "type": "Zapatillas",
         "featured": false,
         "forKids": true,
         "onSale": false
@@ -151,6 +163,7 @@
         "brand": "Superga",
         "img": "2750_jcot_classic_violet_lt_f_avorio.webp",
         "stock": 50,
+        "type": "Zapatillas",
         "featured": false,
         "forKids": true,
         "onSale": false
@@ -163,6 +176,7 @@
         "brand": "Superga",
         "img": "2750_jcot_classic_pink_pale_lilas_ninos.webp",
         "stock": 60,
+        "type": "Zapatillas",
         "featured": false,
         "forKids": true,
         "onSale": false

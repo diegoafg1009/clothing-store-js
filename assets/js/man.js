@@ -1,24 +1,10 @@
-function showSubMenu() {
-    const menu = document.querySelector(".sideBar__navMenu")
-    menu.addEventListener("click", (e) => {
-        if (e.target.classList.contains("sideBar__menuTitle")) {
-            // let menuTitle = e.target
-            let subMenu = e.target.parentElement.lastElementChild
-            subMenu.classList.remove("sideBar__subMenu--collapse")
-            subMenu.classList.toggle("sideBar__subMenu--show")
-            if (!subMenu.classList.contains("sideBar__subMenu--show"))
-                subMenu.classList.add("sideBar__subMenu--collapse")
-        }
-    })
-}
-
 async function loadMaleProducts() {
     let products = []
     const response = await fetch('/assets/products.json')
     data = await response.json();
     await data.forEach(product => {
             if ((product["genre"] === "U" || product["genre"] === "M") && product["forKids"] === false)
-            products.push(new Product(product["id"], product["name"], product["price"], product["genre"], product["brand"], product["img"], product["stock"], product["featured"], product["forKids"], product["onSale"]))
+            products.push(new Product(product["id"], product["name"], product["price"], product["genre"], product["brand"], product["img"], product["stock"], product["type"], product["featured"], product["forKids"], product["onSale"]))
 
     })
     return products
@@ -59,10 +45,12 @@ function filterProductsBy(products, filter) {
 
 async function init() {
     const products = await loadMaleProducts()
+    const sideBar = new SideBar(products) 
+    sideBar.renderItems(products)
+    sideBar.showSubMenu()
     displayProducts(products)
     noFilters(products)
     filterProductsBy(products, "brand")
-    showSubMenu()
 }
 
 window.addEventListener('DOMContentLoaded', init);

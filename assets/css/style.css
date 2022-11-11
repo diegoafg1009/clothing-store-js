@@ -132,15 +132,16 @@
   font-family: 'Raleway', sans-serif; }
   .pageContainer .hero img {
     width: 100%;
-    height: 350px;
+    height: 450px;
     object-fit: cover;
-    object-position: 0% 60%; }
+    object-position: 0% 40%; }
   .pageContainer .pageTitle {
     padding: 32px 0px;
     margin-left: 10%; }
   .pageContainer .pageContent {
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10vh;
     display: flex; }
 
 .sideBar {
@@ -150,10 +151,11 @@
   .sideBar .sideBar__navMenu ul {
     list-style: none; }
     .sideBar .sideBar__navMenu ul .sideBar__menuItem {
-      padding: 10px 0px;
+      padding-bottom: 15px;
       cursor: pointer; }
       .sideBar .sideBar__navMenu ul .sideBar__menuItem .sideBar__menuTitle {
-        display: flex; }
+        display: flex;
+        padding-top: 15px; }
     .sideBar .sideBar__navMenu ul .sideBar__menuItem--borderBotton {
       border-bottom: 1px solid gray; }
   .sideBar .sideBar__subMenu {
