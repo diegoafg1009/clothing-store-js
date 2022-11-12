@@ -252,7 +252,24 @@
     .sideBar__subMenu--show {
         display: block;
     }
+
+    #priceFilter{
+        .filterOptions{
+            padding-top: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            input{
+                    height: 2.5em;
+                    width: 3em;
+                }
+            }
+            .filterOptions__button{
+                width: 3em;
+            }
+    }
 }
+
 
 .productsContainer {
     flex: 1;

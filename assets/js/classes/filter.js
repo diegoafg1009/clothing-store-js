@@ -44,9 +44,44 @@ class Filter {
         })
     }
 
+    byPrice(){
+        let priceMin
+        let priceMax
+        let filteredProducts = []
+        let products = this.products
+        const dp = x => this.displayProducts(x)
+        const priceFilter = document.querySelector("#priceFilter")
+        const button = document.querySelector("#priceButton")
+        priceFilter.addEventListener("input", function(e){
+            if(e.target.id === "priceMin"){
+                priceMin = e.target.value
+            }
+            if(e.target.id === "priceMax"){
+                priceMax = e.target.value
+            }
+            button.addEventListener("click", function(e){
+                if(priceMin && priceMax){
+                    filteredProducts = products.filter(
+                        (product) => product["price"] >= priceMin && product["price"] <= priceMax
+                    )
+                }else if(!priceMax){
+                    filteredProducts = products.filter(
+                        (product) => product["price"] >= priceMin
+                    )
+                }else if(!priceMin){
+                    filteredProducts = products.filter(
+                        (product) => product["price"] <= priceMan
+                    )
+                }
+                dp(filteredProducts)
+            })
+        })
+    }
+
     init(){
         this.displayProducts(this.products)
         this.all()
         this.byKey()
+        this.byPrice()
     }
 }

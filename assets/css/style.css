@@ -164,6 +164,16 @@
     display: none; }
   .sideBar .sideBar__subMenu--show {
     display: block; }
+  .sideBar #priceFilter .filterOptions {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+    .sideBar #priceFilter .filterOptions input {
+      height: 2.5em;
+      width: 3em; }
+  .sideBar #priceFilter .filterOptions__button {
+    width: 3em; }
 
 .productsContainer {
   flex: 1;

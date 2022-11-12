@@ -140,7 +140,7 @@
         "type": "Zapatillas",
         "featured": false,
         "forKids": true,
-        "onSale": false
+        "onSale": true
     },
     {
         "id": 12,
