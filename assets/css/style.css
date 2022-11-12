@@ -151,11 +151,10 @@
   .sideBar .sideBar__navMenu ul {
     list-style: none; }
     .sideBar .sideBar__navMenu ul .sideBar__menuItem {
-      padding-bottom: 15px;
+      padding: 10px 0px;
       cursor: pointer; }
       .sideBar .sideBar__navMenu ul .sideBar__menuItem .sideBar__menuTitle {
-        display: flex;
-        padding-top: 15px; }
+        display: flex; }
     .sideBar .sideBar__navMenu ul .sideBar__menuItem--borderBotton {
       border-bottom: 1px solid gray; }
   .sideBar .sideBar__subMenu {

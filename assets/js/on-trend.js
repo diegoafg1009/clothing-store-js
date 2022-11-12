@@ -3,7 +3,7 @@ async function loadKidsProducts() {
     const response = await fetch('/assets/products.json')
     data = await response.json();
     await data.forEach(product => {
-        if (product["forKids"] === true)
+        if (product["featured"] === true)
             products.push(new Product(product["id"], product["name"], product["price"], product["genre"], product["brand"], product["img"], product["stock"], product["type"], product["featured"], product["forKids"], product["onSale"]))
     })
     return products

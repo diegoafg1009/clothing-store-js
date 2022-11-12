@@ -226,12 +226,11 @@
             list-style: none;
 
             .sideBar__menuItem {
-                padding-bottom: 15px;  
+                padding: 10px 0px;
                 cursor:pointer;
 
                 .sideBar__menuTitle {
                     display: flex;
-                    padding-top: 15px;
                 }
             }
 

@@ -9,47 +9,13 @@ async function loadFemaleProducts () {
     return products
 }
 
-function displayProducts(products){
-    const divProducts = document.querySelector(".productsContainer")
-    divProducts.innerHTML = ""
-    i = 1
-    products.forEach(product => {
-        product.render(i)
-        i++
-    });
-}
-
-function noFilters(products){
-    const div = document.querySelector(".sideBar__navMenu")
-    div.addEventListener("click", function(e) {
-        if(e.target.textContent === "Todos"){
-            displayProducts(products)
-        }
-    })
-}
-
-function filterProductsBy(products, filter){
-    let filteredProducts = []
-    const brands = document.querySelector(`#${filter}Menu .sideBar__subMenu`)
-    brands.addEventListener("click", function(e){
-        if(e.target.classList.contains("sideBar__menuItem")){
-            filteredProducts = products.filter(
-                (product) => product[filter] ===  e.target.textContent
-           )
-            displayProducts(filteredProducts)
-        }
-    })
-}
-
-
 async function init() {
     const products = await loadFemaleProducts()
     const sideBar = new SideBar(products) 
     sideBar.renderItems(products)
     sideBar.showSubMenu()
-    displayProducts(products)
-    noFilters(products)
-    filterProductsBy(products, "brand")
+    const filter = new Filter(products)
+    filter.init()
 };
 
 window.addEventListener('DOMContentLoaded', init);
