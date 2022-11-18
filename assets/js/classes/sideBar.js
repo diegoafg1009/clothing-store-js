@@ -36,3 +36,5 @@ class SideBar{
         });
     }
 }
+
+export {SideBar}

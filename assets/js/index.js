@@ -1,3 +1,6 @@
+import { Filter } from "./classes/filter.js";
+import { Product } from "./classes/product.js"
+
 function carousel(){
     const productContainers = [...document.querySelectorAll(".productsContainer")];
     const preBtn = [...document.querySelectorAll(".arrowBtn--left")];
@@ -20,7 +23,7 @@ function carousel(){
 async function loadFeaturedProducts() {
     let products = []
     const response = await fetch('/assets/products.json')
-    data = await response.json();
+    const data = await response.json();
     await data.forEach(element => {
             if (element["featured"] === true)
             products.push(new Product(element["id"], element["name"], element["price"], element["genre"], element["brand"], element["img"], element["stock"], element["featured"], element["forKids"], element["onSale"]))
@@ -29,19 +32,9 @@ async function loadFeaturedProducts() {
     return products
 }
 
-function displayProducts(products) {
-    const divProducts = document.querySelector(".productsContainer")
-    divProducts.innerHTML = ""
-    i = 1
-    products.forEach(element => {
-        element.render(i)
-        i++
-    });
-}
-
 async function init() {
     const products = await loadFeaturedProducts()
-    displayProducts(products)
+    Filter.displayProducts(products)
     carousel()
 }
 

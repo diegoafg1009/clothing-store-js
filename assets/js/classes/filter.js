@@ -1,11 +1,13 @@
+import { Product } from "./product.js";
+
 class Filter {
     constructor(products) {
         this.products = products
     }
     
-    displayProducts(products) {
+    static displayProducts(products) {
         const divProducts = document.querySelector(".productsContainer")
-        divProducts.innerHTML = ""
+        divProducts.innerHTML = '';
         let i = 1
         products.forEach(product => {
             product.render(i)
@@ -16,7 +18,7 @@ class Filter {
 
     all() {
         const products = this.products
-        const dp = x => this.displayProducts(x)
+        const dp = x => this.constructor.displayProducts(x)
         const div = document.querySelector(".sideBar__navMenu")
         div.addEventListener("click", function (e) {
             if (e.target.textContent === "Todos") {
@@ -27,7 +29,7 @@ class Filter {
 
     byKey() {
         let products = this.products
-        const dp = x => this.displayProducts(x)
+        const dp = x => this.constructor.displayProducts(x)
         const subMenuContainers = document.querySelectorAll(`[id$="Menu"]`)
         subMenuContainers.forEach(subMenuContainer => {
             let filteredProducts = []
@@ -49,7 +51,7 @@ class Filter {
         let priceMax
         let filteredProducts = []
         let products = this.products
-        const dp = x => this.displayProducts(x)
+        const dp = x => this.constructor.displayProducts(x)
         const priceFilter = document.querySelector("#priceFilter")
         const button = document.querySelector("#priceButton")
         priceFilter.addEventListener("input", function(e){
@@ -79,9 +81,11 @@ class Filter {
     }
 
     init(){
-        this.displayProducts(this.products)
+        this.constructor.displayProducts(this.products)
         this.all()
         this.byKey()
         this.byPrice()
     }
 }
+
+export {Filter}
