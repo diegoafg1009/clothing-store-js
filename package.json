@@ -1,20 +1,28 @@
 {
-  "name": "proyectofinal",
+  "name": "clothing-store",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build-css": "node-sass --include-path scss scss/style.scss assets/css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoafg1009/clothing-store-js.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^7.0.3",
-    "nodemon": "^2.0.20"
+  "bugs": {
+    "url": "https://github.com/diegoafg1009/clothing-store-js/issues"
   },
-  "dependencies": {
-    "jest": "^29.3.1"
+  "homepage": "https://github.com/diegoafg1009/clothing-store-js#readme",
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
   }
 }

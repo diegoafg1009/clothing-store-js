@@ -18,7 +18,6 @@ class Product{
         let divProduct = document.createElement("div")
         divProduct.classList.add("product")
         divProduct.setAttribute("id", "row"+row)
-
         divProduct.innerHTML = ` <div class="product__image">
                                     <img src="../assets/img/${this.img}" alt="${this.name}">
                                 </div>
@@ -37,3 +36,4 @@ class Product{
     }
 }
 
+export {Product}
