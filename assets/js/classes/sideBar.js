@@ -7,12 +7,11 @@ class SideBar{
     const menu = document.querySelector(".sideBar__navMenu")
     menu.addEventListener("click", (e) => {
         if (e.target.classList.contains("sideBar__menuTitle")) {
-            // let menuTitle = e.target
             let subMenu = e.target.parentElement.lastElementChild
-            subMenu.classList.remove("sideBar__subMenu--collapse")
-            subMenu.classList.toggle("sideBar__subMenu--show")
-            if (!subMenu.classList.contains("sideBar__subMenu--show"))
-                subMenu.classList.add("sideBar__subMenu--collapse")
+            if(subMenu.classList.contains("sideBar__subMenu")){
+                subMenu.classList.toggle("sideBar__subMenu--collapse")
+                subMenu.classList.toggle("sideBar__subMenu--show")
+            }
         }
     })
 }

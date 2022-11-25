@@ -200,6 +200,24 @@
         width: 100%;
         height: 100%;
         object-fit: cover; }
+      .productsContainer .product .product__image .product__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: radial-gradient(transparent, rgba(0, 0, 0, 0.5));
+        transition: 0.5s ease; }
+    .productsContainer .product .product__button {
+      position: relative;
+      width: 100%;
+      bottom: 40px;
+      text-align: center;
+      z-index: 1;
+      opacity: 0; }
     .productsContainer .product .product__content .product__Title {
       font-size: 18px;
       font-weight: bolder; }
@@ -207,3 +225,7 @@
       font-weight: 500; }
     .productsContainer .product .product__content .product__price {
       font-weight: 400; }
+    .productsContainer .product:hover .product__overlay {
+      opacity: 1; }
+    .productsContainer .product:hover .product__button {
+      opacity: 1; }
