@@ -26,7 +26,7 @@ class PurchasedProduct{
                                         <span>S/. ${this.price}</span>
                                     </div>
                                     <div class="purchase__quantity">
-                                        <span>S/. Cantidad: ${this.quantity}</span>
+                                        <span>Cantidad: ${this.quantity}</span>
                                     </div>
                                     <button class="purchase__removeButton">Remove</button>
                                 </div> `
