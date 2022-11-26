@@ -79,6 +79,54 @@
     }
 }
 
+/*Shopping Cart*/
+
+.shoppingCart{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    .shoppingCart__overlay{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        .shoppingCart__container{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 400px;
+            background-color: white;
+            padding: 40px 20px;
+            .shoppingCart__closeButton{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            .purchasesContainer{
+                flex-grow: 1;
+                overflow-y: scroll;
+                scroll-behavior: smooth;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.shoppingCart--hide{
+    display: none;
+}
+.shoppingCart--show{
+    display: block;
+}
+
+
 /*footer*/
 
 .footerContainer {
@@ -135,11 +183,12 @@
         }
     }
 
-    .carousel{
+    .carousel {
         margin-left: 10%;
         margin-right: 10%;
         margin-bottom: 80px;
-        .carousel__title{
+
+        .carousel__title {
             padding-bottom: 30px;
         }
     }
@@ -162,14 +211,14 @@
             z-index: 8;
         }
 
-        .arrowBtn--left{
+        .arrowBtn--left {
             left: 0;
             transform: rotate(180deg);
         }
 
-        .arrowBtn--right{
+        .arrowBtn--right {
             right: 0;
-        }    
+        }
 
         #carousel__products {
             display: flex;
@@ -227,7 +276,7 @@
 
             .sideBar__menuItem {
                 padding: 10px 0px;
-                cursor:pointer;
+                cursor: pointer;
 
                 .sideBar__menuTitle {
                     display: flex;
@@ -253,20 +302,22 @@
         display: block;
     }
 
-    #priceFilter{
-        .filterOptions{
+    #priceFilter {
+        .filterOptions {
             padding-top: 10px;
             width: 100%;
             display: flex;
             justify-content: space-around;
-            input{
-                    height: 2.5em;
-                    width: 3em;
-                }
-            }
-            .filterOptions__button{
+
+            input {
+                height: 2.5em;
                 width: 3em;
             }
+        }
+
+        .filterOptions__button {
+            width: 3em;
+        }
     }
 }
 
@@ -303,7 +354,7 @@
                 object-fit: cover;
             }
 
-            .product__overlay{
+            .product__overlay {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -313,17 +364,30 @@
                 height: 100%;
                 opacity: 0;
                 background: radial-gradient(transparent, rgba(0, 0, 0, 0.5));
-                transition:0.5s ease;
+                transition: 0.5s ease;
             }
-        }
 
-        .product__button{
-            position: relative;
-            width: 100%;
-            bottom: 40px;
-            text-align: center;
-            z-index: 1;
-            opacity: 0;
+
+            .product__button {
+                position: absolute;
+                width: 60%;
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                z-index: 1;
+                opacity: 0;
+            }
+
+            &:hover {
+                .product__overlay {
+                    opacity: 1;
+                }
+    
+                .product__button {
+                    opacity: 1;
+                }
+            }
         }
 
         .product__content {
@@ -338,18 +402,6 @@
 
             .product__price {
                 font-weight: 400;
-            }
-        }
-
-        &:hover{
-            // .product__image{
-            //     opacity: 0.8;
-            // }
-            .product__overlay{
-                opacity: 1;
-            }
-            .product__button{
-                opacity: 1;
             }
         }
     }
