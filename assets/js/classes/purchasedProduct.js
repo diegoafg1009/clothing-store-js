@@ -25,6 +25,10 @@ class PurchasedProduct{
                                     <div class="purchase__price">
                                         <span>S/. ${this.price}</span>
                                     </div>
+                                    <div class="purchase__quantity">
+                                        <span>S/. Cantidad: ${this.quantity}</span>
+                                    </div>
+                                    <button class="purchase__removeButton">Remove</button>
                                 </div> `
         divPurchases.appendChild(divPurchase)
     }

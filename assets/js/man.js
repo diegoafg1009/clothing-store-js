@@ -26,9 +26,10 @@ async function init() {
     sideBar.showSubMenu()
     const filter = new Filter(products)
     filter.init()
-    let cart = new ShoppingCart(purchasedProducts)
+    const cart = new ShoppingCart(purchasedProducts)
     cart.addToCart()
     cart.showCart()
+    cart.removeFromCart()
     cart.displayPurchases()
 }
 

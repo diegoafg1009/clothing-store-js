@@ -51,11 +51,23 @@
                     </a>
                 </li>
                 <li>
-                    <img src="../assets/img/shopping-cart.png" alt="shopping cart icon">
+                    <img class="cartIcon" src="../assets/img/shopping-cart.png" alt="shopping cart icon">
                 </li>
             </ul>
         </nav>
         <!-- Implemntar luego el Menu Hamburguesa -->
+        <div class="shoppingCart shoppingCart--hide">
+            <div class="shoppingCart__overlay">
+                <aside class="shoppingCart__container">
+                    <button class="shoppingCart__closeButton">X</button>
+                    <h1 class="shoppingCart__title">Tus Compras</h1>
+                    <div class="purchasesContainer">
+                            <!-- Contenido dinamico -->
+                    </div>
+                    <h1 class="shoppingCart__total">Total: S/. 00.00</h1>
+                </aside>
+            </div>
+        </div>
     </header>
     <main>
         <div class="pageContainer">
