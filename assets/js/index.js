@@ -1,5 +1,7 @@
-import { Filter } from "./classes/filter.js";
+import { Filter } from "./classes/filter.js"
 import { Product } from "./classes/product.js"
+import { PurchasedProduct } from "./classes/purchasedProduct.js"
+import { ShoppingCart } from "./classes/shoppingCart.js"
 
 function carousel(){
     const productContainers = [...document.querySelectorAll(".productsContainer")];
@@ -33,9 +35,18 @@ async function loadFeaturedProducts() {
 }
 
 async function init() {
+    let purchasedProducts = JSON.parse(localStorage.getItem('purchasedProducts')) || [];
+    purchasedProducts = purchasedProducts.map(p => {
+        return new PurchasedProduct(p["name"], p["price"], p["brand"], p["img"], p["quantity"])
+    })
     const products = await loadFeaturedProducts()
     Filter.displayProducts(products)
     carousel()
+    const cart = new ShoppingCart(purchasedProducts)
+    cart.addToCart()
+    cart.showCart()
+    cart.removeFromCart()
+    cart.displayPurchases()
 }
 
 window.addEventListener('DOMContentLoaded', init)

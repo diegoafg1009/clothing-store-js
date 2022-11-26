@@ -20,6 +20,9 @@ class Product{
         divProduct.setAttribute("id", "row"+row)
         divProduct.innerHTML = ` <div class="product__image">
                                     <img src="../assets/img/${this.img}" alt="${this.name}">
+                                    <div class="product__overlay">
+                                    <button class="product__button">Agregar a Carrito</button>
+                                    </div>
                                 </div>
                                 <div class="product__content">
                                     <div class="product__Title">

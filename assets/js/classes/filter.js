@@ -72,7 +72,7 @@ class Filter {
                     )
                 }else if(!priceMin){
                     filteredProducts = products.filter(
-                        (product) => product["price"] <= priceMan
+                        (product) => product["price"] <= priceMax
                     )
                 }
                 dp(filteredProducts)
