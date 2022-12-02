@@ -309,6 +309,15 @@
     padding-top: 20px;
     padding-right: 32px;
 
+    .sideBar__searchContainer{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .sideBar__searchInput{
+            padding: 10px;
+            width: 100%;
+        }
+    }
+
     .sideBar__navMenu {
         ul {
             list-style: none;

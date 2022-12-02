@@ -29,6 +29,7 @@ class SideBar{
             items.forEach(item =>{
                 let li = document.createElement("li")
                 li.classList.add("sideBar__menuItem")
+                li.setAttribute("id", item)
                 li.innerHTML = `${item}`
                 ul.appendChild(li)
             })

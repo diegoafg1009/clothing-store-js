@@ -26,6 +26,22 @@ class Filter {
             }
         })
     }
+    
+    byName(){
+        let products = this.products
+        const dp = x => this.constructor.displayProducts(x)
+        const nameFilter = document.querySelector(".sideBar__searchInput")
+        nameFilter.addEventListener("input", (e) => {
+            let filteredProducts =[]
+            filteredProducts = products.filter(product => {
+                console.log("Nombre del producto" + product["name"])
+                console.log("Input: " + e.target.value)
+                console.log(product["name"].includes(e.target.value))
+                return product["name"].toLowerCase().includes(e.target.value.toLowerCase())
+            })
+            dp(filteredProducts)
+        })
+    }
 
     byKey() {
         let products = this.products
@@ -84,6 +100,7 @@ class Filter {
         this.constructor.displayProducts(this.products)
         this.all()
         this.byKey()
+        this.byName()
         this.byPrice()
     }
 }
