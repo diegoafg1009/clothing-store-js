@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourFit - Libro de Reclamaciones</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabecera de pagina -->
+    <header class="header">
+        <!-- Menu de la pagina -->
+        <nav class="header__navMenu">
+            <ul>
+                <li>
+                    <div class="header__logo">
+                        <!-- Logo provisional, agregar luego una foto-->
+                        <a href="../index.html">
+                            YourFit
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="man.html">Hombre</a>
+                </li>
+                <li>
+                    <a href="woman.html">Mujer</a>
+                </li>
+                <li>
+                    <a href="kids.html">Niños</a>
+                </li>
+                <li>
+                    <a href="sale.html">Sale</a>
+                </li>
+                <li>
+                    <a href="on-trend.html">On Trend</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header__navIcons">
+            <ul>
+                <li>
+                    <a href="../pages/login.html">
+                        <img src="../assets/img/user.png" alt="user icon">
+                    </a>
+                </li>
+                <li>
+                    <img class="cartIcon" src="../assets/img/shopping-cart.png" alt="shopping cart icon">
+                </li>
+            </ul>
+        </nav>
+        <!-- Implemntar luego el Menu Hamburguesa -->
+        <div class="shoppingCart shoppingCart--hide">
+            <div class="shoppingCart__overlay">
+                <aside class="shoppingCart__container">
+                    <button class="shoppingCart__closeButton">X</button>
+                    <h1 class="shoppingCart__title">Tus Compras</h1>
+                    <div class="purchasesContainer">
+                        <!-- Contenido dinamico -->
+                    </div>
+                    <h1 class="shoppingCart__total">Total: S/. 00.00</h1>
+                </aside>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="pageContainer">
+            <h1 class="pageTitle">Libro de Reclamaciones</h1>
+            <div class="form">
+                <h2 class="form__title">1) Datos de la persona que presenta el reclamo</h2>
+                <div class="form__group">
+                    <div class="form__question">
+                        <label for="documentType">Tipo de Documente</label>
+                        <select name="documents" id="documentType">
+                            <option disabled value="select" selected>Seleccionar</option>
+                            <option value="dni">DNI</option>
+                            <option value="ce">Carné de Extranjería</option>
+                        </select>
+                    </div>
+                    <div class="form__question">
+                        <label for="documentNumber">Número de Documento</label>
+                        <input type="text" name="documentNumber" id="documentNumber" placeholder="12345678">
+                    </div>
+                    <div class="form__question">
+                        <label for="fathersLastName">Apellido Paterno</label>
+                        <input type="text" name="fathersLastName" id="fathersLastName" placeholder="Perez">
+                    </div>
+                    <div class="form__question">
+                        <label for="mothersLastName">Apellido Materno</label>
+                        <input type="text" name="mothersLastName" id="mothersLastName" placeholder="Acosta">
+                    </div>
+                    <div class="form__question">
+                        <label for="firstName">Nombres</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Jose Juan">
+                    </div>
+                    <div class="form__question">
+                        <label for="replyType">Tipo de Respuesta</label>
+                        <select name="replyType" id="replyType">
+                            <option disabled value="select" selected>Seleccionar</option>
+                            <option value="email">Correo Electrónico</option>
+                            <option value="atHome">Dirección Domiciliaria</option>
+                        </select>
+                    </div>
+                    <div class="form__question">
+                        <label for="departament">Departamento</label>
+                        <input type="text" name="departament" id="departament" placeholder="Lima">
+                    </div>
+                    <div class="form__question">
+                        <label for="province">Provincia</label>
+                        <input type="text" name="province" id="province" placeholder="Lima">
+                    </div>
+                    <div class="form__question">
+                        <label for="distrit">Distrito</label>
+                        <input type="text" name="distrit" id="distrit" placeholder="Surco">
+                    </div>
+                    <div class="form__question">
+                        <label for="telephoneNumber">Número de Telefono</label>
+                        <input type="text" name="telephoneNumber" id="telephoneNumber" placeholder="999999999">
+                    </div>
+                    <div class="form__question">
+                        <label for="email">Email</label>
+                        <input type="text" name="Email" id="Email" placeholder="pepito123@gmail.com">
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2 class="form__title">2) Información general</h2>
+                <div class="form__group">
+                    <div class="form__question">
+                        <label for="orderNumber">Orden de Compra</label>
+                        <input type="text" name="orderNumber" id="orderNumber" placeholder="123456789">
+                    </div>
+                    <div class="form__question">
+                        <label for="amount">Monto Reclamado (S/.)</label>
+                        <input type="text" name="amount" id="amount" placeholder="99.00">
+                    </div>
+                    <div class="form__question">
+                        <label for="description">Nombre del producto</label>
+                        <input type="text" name="description" id="description"
+                            placeholder="Escriba aqui el nombre del producto...">
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2 class="form__title">3) Detalles del reclamo</h2>
+                <div class="form__group">
+                    <div class="form__question">
+                        <label for="claimType">Tipo</label>
+                        <select name="claimType" id="claimType">
+                            <option disabled value="select" selected>Seleccionar</option>
+                            <option value="email">Reclamo</option>
+                            <option value="atHome">Queja</option>
+                        </select>
+                    </div>
+                    <div class="form__question">
+                        <label for="reason">Motivo</label>
+                        <select name="reason" id="reason">
+                            <option disabled value="select" selected>Seleccionar</option>
+                            <option value="site">Sitio</option>
+                            <option value="account">Cuenta</option>
+                            <option value="store">Tienda</option>
+                            <option value="change">Cambios</option>
+                            <option value="delivery">Entrega</option>
+                            <option value="warranty">Garantia</option>
+                            <option value="refund">Reembolso</option>
+                            <option value="cancellation">Cancelación</option>
+                            <option value="return">Devoluciones</option>
+                            <option value="colaboration">Colaboraciones</option>
+                            <option value="paymentMethods">Medios de Pago</option>
+                            <option value="productService">Producto - Servicio</option>
+                            <option value="billingCharges">Cobros - Facturación</option>
+                            <option value="advertisingAndOffers">Publicidad y ofertas</option>
+                        </select>
+                    </div>
+                    <div class="form__question">
+                        <label for="claimDetails">Detalles del reclamo</label>
+                        <input type="text" name="claimDetails" id="claimDetails"
+                            placeholder="Detalle su reclamo o sugerencia aquí">
+                    </div>
+                    <div class="form__question">
+                        <label for="demand">Petición</label>
+                        <input type="text" name="demand" id="demand" placeholder="Ingrese su petición aquí">
+                    </div>
+                </div>
+                <div class="form__button">
+                    <button>Enviar</button>
+                <div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <p class="footerContainer__copyright">© 2022 YourFit | Todos los derechos reservados</p>
+            <div>
+                <a class="footerContainer__complaintsBook" href="../pages/complaints-book.html">
+                    <img src="../assets/img/book.svg" alt="Libro de Reclamaciones">
+                    <span>Libro de Reclamaciones</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

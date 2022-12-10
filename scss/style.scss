@@ -171,11 +171,26 @@
 .footerContainer {
     background-color: rgb(33, 37, 41);
     padding: 32px 24px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 
     .footerContainer__copyright {
+        padding-bottom: 12px;
         color: white;
-        font-family: 'Raleway', sans-serif;
-        text-align: center;
+    }
+
+    .footerContainer__complaintsBook{
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        img{
+            height: 40px;
+        }
+        span{
+            color: white;
+        }
     }
 }
 
@@ -281,7 +296,7 @@
 .pageContainer {
     margin-top: 30px;
     font-family: 'Raleway', sans-serif;
-
+    margin-bottom: 10vh;
     .hero {
         img {
             width: 100%;
@@ -299,7 +314,6 @@
     .pageContent {
         margin-left: 10%;
         margin-right: 10%;
-        margin-bottom: 10vh;
         display: flex;
     }
 }
@@ -453,4 +467,53 @@
             }
         }
     }
+}
+
+.form{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 48px;
+        .form__title{
+            margin-bottom: 24px;
+        }
+        .form__group{
+            margin-left: 5%;
+            margin-right: 5%;
+            display: grid;
+            grid-template-areas: "a a";
+            gap: 10px 10%;
+            .form__question{
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                margin-bottom: 10px;
+                label{
+                    font-size: 18px;
+                    font-weight: bolder;
+                }
+                input{
+                    padding: 0.25rem;
+                    font-size: 18px;
+                    width: 100%;
+                    font-family: 'Raleway', sans-serif;
+                }
+                select{
+                    padding: 0.25rem;
+                    font-size: 18px;
+                    width: 100%;
+                    font-family: 'Raleway', sans-serif;
+                }
+            }
+        }
+        .form__button{
+            margin-top: 40px;
+            text-align: center;
+            button{
+                font-family: 'Raleway', sans-serif;
+                font-size: 24px;
+                font-weight: bolder;
+                height: 2.5rem;
+                width: 6rem;
+            }
+        }    
 }
